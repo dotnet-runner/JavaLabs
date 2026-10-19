@@ -19,7 +19,7 @@ public class App {
             app.task1();
             //app.task2();
             app.task3();
-            //app.task4();
+            app.task4();
             app.task5();
         } catch (IOException ex) {
             System.err.println(ex.getMessage());
@@ -127,7 +127,7 @@ public class App {
         System.out.println("Задание 4");
         try {
             System.out.println("Введите 15 вещественных значений концентрации:");
-            for (int i = 1; i <= 15; i++) {
+            for (int i = 1; i <= 5; i++) {
                 System.out.printf("Значение %d: ", i);
                 double val = scanner.nextDouble();
                 concentrations.add(val);
@@ -155,9 +155,9 @@ public class App {
 
     public void task5() {
         Path path = Path.of("D:\\Java\\files\\f5.txt");
-
         List<Integer> collection = new ArrayList<>(ARRAY_SIZE);
 
+        System.out.println("Задание 5");
         for (int i = 0; i < ARRAY_SIZE; i++) {
             collection.add(random.nextInt(1, 100));
         }
