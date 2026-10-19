@@ -1,0 +1,6 @@
+git fetch origin
+git checkout main
+git checkout -b Lab14
+git add Lab14
+git commit -m "Add Lab14"
+git push origin Lab14
